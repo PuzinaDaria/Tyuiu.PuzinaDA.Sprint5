@@ -23,11 +23,11 @@ namespace Tyuiu.PuzinaDA.Sprint5.Task1.V4.Lib
                 strc = Convert.ToString(count);
                 if (i == -1)
                 {
-                    File.AppendAllText(path, "0" + "\t");
+                    File.AppendAllText(path, "0" + Environment.NewLine);
                 }
                 else if (i != stopValue)
                 {
-                    File.AppendAllText(path, strc + "\t");
+                    File.AppendAllText(path, strc + Environment.NewLine);
                 }
                 else
                 {
