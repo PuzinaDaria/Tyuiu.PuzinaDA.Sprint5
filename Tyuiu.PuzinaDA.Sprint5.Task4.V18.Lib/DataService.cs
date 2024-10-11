@@ -6,6 +6,8 @@ namespace Tyuiu.PuzinaDA.Sprint5.Task4.V18.Lib
     {
         public double LoadFromDataFile(string path)
         {
+            string file = Path.Combine(Path.GetTempPath(), "InPutDataFileTask4V18.txt");
+            File.WriteAllText(file, "1,79");
             string strX = File.ReadAllText(path);
             double x = Convert.ToDouble(strX);
             double res = Math.Round((Math.Cos(x) + (Math.Pow(x, 2) / 2)), 3);

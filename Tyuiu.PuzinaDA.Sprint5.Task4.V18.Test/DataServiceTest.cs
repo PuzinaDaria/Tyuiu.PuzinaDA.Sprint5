@@ -7,7 +7,7 @@ namespace Tyuiu.PuzinaDA.Sprint5.Task4.V18.Test
         [TestMethod]
         public void Checked()
         {
-            string path = Path.Combine(@"C:\DataSprint5\", "InPutDataFileTask4V18.txt");
+            string path = Path.Combine(Path.GetTempPath(), "InPutDataFileTask4V18.txt");
             FileInfo fl = new FileInfo(path);
             Assert.IsTrue(fl.Exists);
         }

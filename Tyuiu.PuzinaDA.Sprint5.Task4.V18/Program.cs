@@ -16,14 +16,14 @@ namespace Tyuiu.PuzinaDA.Sprint5.Task4.V18
             Console.WriteLine("* Выполнил: Пузина Дарья Алексеевна | ИИПБ-24-1                           *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* УСЛОВИЕ:                                                                *");
-            Console.WriteLine("* Дан файл С:\\DataSprint5\\InPutDataFileTask4V0.txt, в котором есть      *");
-            Console.WriteLine("* вещественное значение. Прочитать значение из файла и подставить вместо  *");
-            Console.WriteLine("* Х в формуле                                                             *");
+            Console.WriteLine("* Дан файл, в котором есть вещественное значение. Прочитать значение из   *");
+            Console.WriteLine("* файла и подставить вместо Х в формуле                                   *");
             Console.WriteLine("*                                                                         *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
             Console.WriteLine("***************************************************************************");
-            string path = Path.Combine(@"C:\DataSprint5\", "InPutDataFileTask4V18.txt");
+
+            string path = Path.Combine(Path.GetTempPath(), "InPutDataFileTask4V18.txt");
             Console.WriteLine("Данные находятся в файле: " + path);
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
