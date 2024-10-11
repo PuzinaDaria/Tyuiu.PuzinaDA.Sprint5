@@ -22,8 +22,7 @@ namespace Tyuiu.PuzinaDA.Sprint5.Task4.V18
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
             Console.WriteLine("***************************************************************************");
-
-            string path = Path.Combine(Path.GetTempPath(), "InPutDataFileTask4V18.txt");
+            string path = Path.Combine(@"C:\DataSprint5\", "InPutDataFileTask4V18.txt");
             Console.WriteLine("Данные находятся в файле: " + path);
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
