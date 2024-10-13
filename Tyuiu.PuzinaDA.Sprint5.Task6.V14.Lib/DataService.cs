@@ -7,8 +7,8 @@ namespace Tyuiu.PuzinaDA.Sprint5.Task6.V14.Lib
         public int LoadFromDataFile(string path)
         {
             string file = Path.GetTempFileName();
-            File.WriteAllText(file, "54*634/6*==-+-596594030*/45+-+3-*/==0--+8*5884546433214343545444+44*/45(894-" +
-                "3+769*438-93-45+240+95=7+4*95939(045)749/05*8-49+58+34*095820*0485");
+            File.WriteAllText(file, "54*634/9==+59659.4030/45++3/==0-+8*588,4546433214343545444+44/4:5(894=3+76438934" +
+                "5+240+95=7+495939(045)749/05*849+58+34095820*0485");
             int count = 0;
             using (StreamReader sr = new StreamReader(file))
             {
@@ -18,7 +18,7 @@ namespace Tyuiu.PuzinaDA.Sprint5.Task6.V14.Lib
                     
                     for (int i = 0; i < line.Length; i++)
                     {
-                        if (line[i] == '*')
+                        if (line[i] == '.' || line[i] == ',' || line[i] == '-' || line[i] == ':' || line[i] == '?' || line[i] == '!')
                         {
                             count++;
                         }
