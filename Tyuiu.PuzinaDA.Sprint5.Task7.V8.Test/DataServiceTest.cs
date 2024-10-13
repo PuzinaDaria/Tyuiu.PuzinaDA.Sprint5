@@ -5,8 +5,11 @@ namespace Tyuiu.PuzinaDA.Sprint5.Task7.V8.Test
     public class DataServiceTest
     {
         [TestMethod]
-        public void TestMethod1()
+        public void Checked()
         {
+            string path = Path.Combine(@"C:\DataSprint5\", "InPutDataFileTask7V8.txt");
+            FileInfo fl = new FileInfo(path);
+            Assert.IsTrue(fl.Exists);
         }
     }
 }

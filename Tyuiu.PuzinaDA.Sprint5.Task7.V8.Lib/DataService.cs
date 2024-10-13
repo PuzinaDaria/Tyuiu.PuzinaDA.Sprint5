@@ -7,13 +7,14 @@ namespace Tyuiu.PuzinaDA.Sprint5.Task7.V8.Lib
         public string LoadDataAndSave(string path)
         {
             string file = Path.GetTempFileName();
-            File.WriteAllText(file, "Ла0м-_)9РААЩо=+Н" + Environment.NewLine + "ЛАТ(Щ_№)БА39пЛ64=рлЛ");
+            File.WriteAllText(file, "ПРИВЕТ, World! This МОЯ ПЕРВАЯ ПРОГРАММА.");
             string saveFile = Path.Combine(Path.GetTempPath(), "OutPutDataFileTask7V8.txt");
             FileInfo fl = new FileInfo(saveFile);
             if (fl.Exists)
             {
                 fl.Delete();
             }
+
             string str = "";
             using (StreamReader sr = new StreamReader(file))
             {
@@ -22,9 +23,13 @@ namespace Tyuiu.PuzinaDA.Sprint5.Task7.V8.Lib
                 {
                     for (int i = 0; i < line.Length; i++)
                     {
-                        if (char.IsUpper(line[i]))
+                        if (char.IsUpper(line[i]) && line[i] >= 'А' && line[i] <= 'Я')
                         {
-                            char.ToLower(line[i]);
+                            
+                            str = str + char.ToLower(line[i]);
+                        }
+                        else
+                        {
                             str = str + line[i];
                         }
                     }
