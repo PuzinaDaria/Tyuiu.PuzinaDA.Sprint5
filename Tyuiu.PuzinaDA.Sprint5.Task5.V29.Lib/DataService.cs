@@ -8,7 +8,7 @@ namespace Tyuiu.PuzinaDA.Sprint5.Task5.V29.Lib
         {
             double res = 100;
             string file = Path.GetTempFileName();
-            File.WriteAllText(file, "1,79" + Environment.NewLine + "2" + Environment.NewLine + "3,6" + Environment.NewLine + "31");
+            File.WriteAllText(file, "1,79" + Environment.NewLine + "11" + Environment.NewLine + "3,6" + Environment.NewLine + "31");
             using (StreamReader sr = new StreamReader(file))
             {
                 string line; 
